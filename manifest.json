@@ -1,0 +1,19 @@
+{
+  "name": "Gody Dark Mode",
+  "description": "Dark Mode For Gody.vn Site Copyright by Nguyen Tu",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "externally_connectable": {
+    "matches": ["*://gody.vn/*"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://gody.vn/*"],
+      "css": ["styles/styles.css"],
+      "js": ["javascript/script.js"]
+    }
+  ]
+}
